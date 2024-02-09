@@ -32,7 +32,7 @@ const product = {
 // const { price: productPrice } = product;
 // console.log(productPrice);
 
-const transaction = (type, { label, stock }) => {
+const transaction = (type, { label, stock = 0 } = {}) => {
     console.log(type, label, stock);
 }
 
